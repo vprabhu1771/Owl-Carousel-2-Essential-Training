@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+<!-- Set up your HTML -->
+<div class="owl-carousel">
+    <div> 
+        <img src="images/1.jpg" alt="">
+    </div>
+    <div>
+        <img src="images/2.jpg" alt="">
+    </div>
+    <div>
+        <img src="images/3.jpg" alt="">
+    </div>
+    <div>
+        <img src="images/4.jpg" alt="">
+    </div>    
+</div>
+
+
+<script>
+$(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        // Autoplay interval in milliseconds (3 seconds in this example)
+        autoplayTimeout: 1000, 
+        // Pause autoplay when mouse hovers over the carousel
+        autoplayHoverPause: true 
+    });
+});
+</script>
+    
+</body>
+</html>
